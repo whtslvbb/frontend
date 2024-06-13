@@ -1,0 +1,10 @@
+body{
+    background-color: grey;
+}
+
+#third-text{
+    background-color: rgb(28, 150, 119);
+    text-align: end;
+    color: white;
+    font-weight: bold
+}
