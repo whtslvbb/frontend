@@ -1,0 +1,359 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container1 {
+  width: 100%;
+  height: 300px;
+  background-color: bisque;
+  padding: 50px 0;
+}
+
+.containerInside {
+  width: 75%;
+  height: 200px;
+  margin: 0px auto;
+  background-color: brown;
+  padding: 50px 0;
+}
+
+.text1 {
+  width: 50%;
+  height: 100px;
+  margin: 0px auto;
+  background-color: blanchedalmond;
+  text-align: center;
+  line-height: 100px;
+}
+
+.container2 {
+  width: 100%;
+}
+
+.menu {
+  width: 20%;
+  height: 100px;
+  float: left;
+}
+
+.menuRed {
+  background-color: red;
+  text-align: center;
+}
+
+.menuBlue {
+  background-color: Blue;
+  text-align: center;
+}
+
+.menuGreen {
+  background-color: Green;
+  text-align: center;
+}
+
+.menuYellow {
+  background-color: Yellow;
+  text-align: center;
+}
+
+.menuGrey {
+  background-color: grey;
+  text-align: center;
+}
+
+.wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.container4 {
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  width: 100%;
+  height: 100px;
+}
+
+.box{
+    width: 33.33%;
+    height: 250px;
+}
+
+.firstpart{
+    background-color: cornflowerblue;
+    float: left;
+    padding-top: 20px;
+}
+
+.secondpart{
+    background-color: rgb(27, 133, 24);
+    float: left;
+}
+
+.thirdpart{
+    background-color: rgb(141, 143, 46);
+    float: left;
+}
+
+.text2{
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+    background-color: coral;
+    height: 75px;
+}
+
+.underNumber{
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 50%;
+    height: 125px;
+    background-color: aliceblue;
+}
+
+.third{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(160, 28, 89);
+    text-align: center;
+}
+
+.lastBox{
+    width: 100%;
+    height: 75px;
+}
+
+.forth{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    background-color: cyan;
+    float: left;
+}
+
+.fifth{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(125, 199, 106);
+    float: left;
+}
+
+.A{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background-color: darkgoldenrod;
+}
+
+.secondFloat{
+    width: 100%;
+    height: 210px;
+}
+
+.letter{
+    height: 100%;
+    width:calc(100% / 3);
+    float: left;
+}
+
+.B{
+    height: 52.5px;
+    width: 100%;
+    text-align: center;
+    background-color: darkviolet;
+}
+
+.containerForB{
+    width: 100%;
+    height: 157.5px;
+}
+
+.B1{
+    background-color: lightsalmon;
+    text-align: center;
+}
+.boxB{
+    float: left;
+    height: 100%;
+    width: 50%;
+}
+.space{
+    width: 100%;
+    height: 78.75px;
+    background-color: darkviolet;
+}
+.B2{
+    width: 100%;
+    height: 78.75px;
+    background-color: darkorange;
+    text-align: center;
+}
+
+.wrapperC{
+    width: 100%;
+    height: calc(210px / 4);
+    text-align: center;
+}
+
+.C1{
+    background-color: aqua;
+}
+
+.C2{
+    background-color: rgb(78, 21, 170);
+}
+
+.C3{
+    background-color: rgb(109, 41, 83);
+}
+
+.BoxC{
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+.C4{
+    background-color: crimson;
+}
+
+.C5{
+ background-color: darkseagreen;
+}
+
+.boxD{
+    width: 100%;
+    height: 50%;
+}
+
+.D3{
+    text-align: center;
+    background-color: fuchsia;
+}
+
+.firstD{
+    width: 100%;
+    height: 52.5px;
+    text-align: center;
+}
+
+.D1{
+    background-color: brown;
+}
+
+.D2{
+    background-color: darkkhaki;
+}
+
+.image{
+    max-width: 40px;
+    margin: 0 auto;
+}
+
+.romeFirst{
+    height: 40px;
+    width: 100%;
+}
+
+.romeFloat{
+    height: 100%;
+    width: calc(100% / 3);
+    float: left;
+    text-align: center;
+}
+
+.rome1{
+    background-color: darkslategrey;
+}
+
+.rome2{
+    background-color: rgb(95, 8, 8);
+}
+
+.rome3{
+    background-color: rgb(28, 224, 77);
+}
+
+.romeSecond{
+    width: 100%;
+    height: calc(52.5px * 1.5);
+}
+
+.romeContainer{
+    width: 100%;
+    height: calc(100% / 2);
+    padding: calc(52.5px * 1.5 / 8);
+}
+
+.rome6{
+    text-align: center;
+    background-color: blue;
+}
+
+.romeIntoBox{
+    margin: 0 auto;
+    height: 100%;
+    background-color: khaki;
+    width: 60%;
+    padding-top: 10px;
+}
+
+.underBox{
+    background-color: rgb(43, 13, 38);
+    height: 10px;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.romeThird{
+    height: calc(52.5px * 2.5);
+    width: 100%;
+}
+
+.rome7{
+    width: calc(100% / 3);
+    height: 100%;
+    text-align: center;
+    float: left;
+    background-color: yellowgreen;
+}
+
+.romeBox{
+    width: calc(100% / 3 * 2);
+    height: 100%;
+    float: left;
+    background-color: antiquewhite;
+}
+
+.romeRect{
+    width: 100%;
+    height: calc(100% / 3);
+    text-align: center;
+}
+
+.romeSquare{
+    text-align: center;
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+
+.rome8{
+    background-color: darkseagreen;
+}
+
+.rome9{
+    background-color: rgb(76, 32, 146);
+}
+
+.rome10{
+    background-color: rgb(216, 173, 32);
+}
+
+.rome11{
+    background-color: rgb(255, 103, 103);
+}
