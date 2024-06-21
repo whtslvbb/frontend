@@ -1,0 +1,98 @@
+@import url(reset.css);
+@import url(fonts.css);
+
+.text{
+    font-family: 'Roboto';
+}
+
+.headText{
+    font-family: 'Roboto-bold';
+    text-align: center;
+    line-height: 50px;
+    font-size: 32px;
+    color: rgb(190, 0, 0);
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: 100vh;
+    flex: 1;
+}
+
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: lightgray;
+}
+
+.left{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.right{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    gap: 5px;
+}
+
+.description{
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 50px);
+}
+
+.mainImage{
+    width: 533px;
+    height: 300px;
+    background-image: url(../Marvel_Studios_logo.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: 6px double lightgrey;
+}
+
+.images{
+    width:533px ;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.miniImage{
+    width: 110px;
+    height: 80%;
+    background-image: url(../Marvel_Studios_logo.jpg);
+    border: 6px double lightgrey;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.bigText{
+    font-size: 32px;
+}
+
+.line{
+    width: 100%;
+    height: 3px;
+    background-color: rgb(190, 0, 0);
+    border-radius: 5px;
+}
+
+.doc{
+    text-align: justify;
+    line-height: 25px;
+
+}
