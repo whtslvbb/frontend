@@ -1,0 +1,478 @@
+@import url(reset.css);
+@import url(fonts.css);
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: 100vh;
+}
+
+.mainText {
+    font-family: 'Bahij-sultannahia';
+    font-size: 24px;
+}
+
+.descryptionText {
+    font-family: 'ChronicaPro-Regular';
+    color: #B1B1B1;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.header {
+    background-color: white;
+    width: 100%;
+    height: 130px;
+    min-height: 130px;
+    gap: 100px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    color: black;
+    text-decoration: none;
+}
+
+.chosen {
+    color: #2785F7;
+}
+
+.wrapper {
+    width: 100%;
+    flex: 1;
+    padding: 0 24px 48px 24px;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    background-color: #EAEBED;
+    border-radius: 30px;
+    padding: 80px 20px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.container {
+    padding: 30px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.secondPart {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: 100%;
+}
+
+.company {
+    width: 100%;
+    gap: 30px;
+    display: flex;
+}
+
+.content {
+    width: 100%;
+    gap: 30px;
+    display: flex;
+}
+
+.case {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+}
+
+.teamImage {
+    width: 100px;
+}
+
+.dataImage {
+    width: 100px;
+    margin-bottom: 30px;
+}
+
+.data {
+    flex: initial;
+    max-width: 35%;
+
+}
+
+.aline {
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.icon {
+    color: rgb(0, 0, 0);
+    width: 35px;
+}
+
+.sideBar {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    max-width: 84px;
+}
+
+.iconWrapper {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.iconWrapper:hover svg {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.iconWrapper:hover {
+    background-color: #2785F7;
+    border: none;
+    cursor: pointer;
+}
+
+.teamContainer {
+    padding: 32px 42px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.teamContainer:hover{
+    background-color: #2785F7;
+    color: #ffffff;
+}
+
+.teamContainer::after{
+    content:url(../images/trash.svg);
+    position: absolute;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    top: calc(0% - 24px);
+    left: calc(100% - 36px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.teamContainer:hover::after{
+    display: block;
+    cursor: pointer;
+}
+
+.teamWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+.employee {
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.lessonsContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    border-radius: 30px;
+    padding: 16px;
+}
+
+.lessonsContainer:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.lessonWrapper {
+    flex-direction: column;
+    gap: 5px;
+    padding: 80px 40px;
+}
+
+.lesson {
+    width: 15%;
+    text-align: center;
+}
+
+.topicContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    border-radius: 30px;
+    padding: 16px;
+}
+
+.download {
+    width: 20px;
+}
+
+.downloadBox {
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    margin: 0 auto;
+    background-color: #EAEBED;
+    border: 1px solid black;
+}
+
+.sideBar .iconWrapper::after{
+    font-family: 'ChronicaPro-Regular';
+    font-size: 16px;
+    height: 60px;
+    width: 0;
+    padding: 0px 16px;
+    position: absolute;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    left: 100%;
+    background-color: #2785F7;
+    display: flex;
+    align-items: center;
+    color: white;
+    visibility: hidden;
+    transition-duration: 0.5s;
+    transition-property: width;
+}
+
+.sideBar .iconWrapper:hover::after{
+    visibility: visible;
+    cursor: pointer;
+    width: 64px;
+}
+
+.folderIcon::after{
+    content: 'Projects';
+}
+
+.cogIcon::after{
+    content: 'Setting';
+}
+
+.computerIcon::after{
+    content: 'Account';
+}
+
+.teamIcon::after{
+    content: 'Groups';
+}
+
+.cloudIcon::after{
+    content: 'Cloud';
+}
+
+.sideBar .iconWrapper:hover{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.teamContainer:hover .descryptionText{
+    color: #ffffff;
+}
+
+.compliter{
+    height: 20px;
+    width: 20px;
+}
+
+.isActive {
+    background-color: #2785F7;
+}
+
+.isActive svg{
+    color: #ffffff;
+}
+
+.accountWrapper{
+    display: flex;
+    height: 100%;
+    width: 35%;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.companyContainer{
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.photo{
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    background-color: palevioletred;
+    color: #ffffff;
+    font-size: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 80px;
+}
+
+.photoLocker{
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    background-color:#2785F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 80px;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+}
+
+.password{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.passwordData{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+}
+
+.boxAccount{
+    width: 100%;
+    background-color: #EAEBED;
+    border-radius: 30px;
+    padding: 20px 20px;
+    display: flex;
+    gap: 30px;
+}
+
+.space{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 10px 1px rgb(197, 197, 197);
+    border: 2px solid #ffffff;
+}
+
+textarea{
+    width: 100%;
+    height: 104px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 10px 1px rgb(197, 197, 197);
+    resize: none;
+    border: 2px solid #ffffff;
+}
+
+input::placeholder{
+    font-family: 'ChronicaPro-Regular' ;
+}
+
+textarea::placeholder{
+    font-family: 'ChronicaPro-Regular' ;
+}
+
+textarea:focus{
+    border: 2px solid #2785F7;
+    box-shadow: none;
+}
+
+input:focus{
+    border: 2px solid #2785F7;
+    box-shadow: none;
+}
+
+.sideBarWrapper{
+    display: flex;
+    align-items: center;
+}
+
+.saveButton{
+    display: flex;
+    justify-content: end;
+}
+
+input[type="submit"]{
+    width: 100px;
+    background-color: #2785F7;
+    border: none;
+    color: white;
+}
+
+.photoUniversity{
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    background-color: coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 80px;
+}
+
+.split{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.yourData{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
