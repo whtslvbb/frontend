@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.kanit-light {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: white;
+}
+
+.kanit-regular {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+}
+
+.kanit-black {
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: 100vh;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    width: 150px;
+}
+
+.mainImage {
+    width: 50%;
+    aspect-ratio: 72/57;
+    object-fit: cover;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.blackBoard {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: black;
+    padding: 108px;
+    gap: 66px;
+}
+
+.date {
+    font-size: 14px;
+    word-spacing: 7px;
+}
+
+.lifestyle {
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.upBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainText {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.head {
+    font-size: 28px;
+}
+
+.descyption {
+    font-size: 14px;
+}
+
+.readMore {
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    padding: 20px 64px;
+    width: fit-content;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.burgerLine {
+    background-color: black;
+    border-radius: 4px;
+    width: 36px;
+    height: 8px;
+}
+
+.burgerMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    position: relative;
+    left: 0;
+}
+
+.wrapper:hover menu {
+    display: flex;
+}
+
+.wrapper:hover .burgerMenu {
+    display: none;
+}
+
+.wrapper:hover .crossBox {
+    display: block;
+}
+
+nav {
+    height: 100%;
+    width: 8%;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.mainLogo {
+    height: 100%;
+    width: 92%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 8%;
+}
+
+menu {
+    background-color: white;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 342px;
+    height: 356px;
+    position: absolute;
+    top: 76px;
+    left: 52px;
+    box-shadow: 0px 0px 4px 1px rgb(236, 236, 236);
+    display: none;
+}
+
+.point {
+    text-decoration: underline;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+}
+
+.wrapper {
+    padding: 20px 10px;
+    cursor: pointer;
+}
+
+.crossBox {
+    display: none;
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.cross1 {
+    position: absolute;
+    top: calc(50% - 4px);
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: black;
+    transform: rotate(45deg);
+}
+
+.cross2 {
+    position: absolute;
+    left: 0;
+    top: calc(50% - 4px);
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: black;
+    transform: rotate(-45deg);
+}
+
+.content {
+    padding: 54px 148px;
+    gap: 64px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 4px;
+    height: 138px;
+}
+
+.footerText {
+    font-size: 12px;
+    color: white;
+}
+
+footer .logo {
+    width: 144px;
+}
+
+.nameTopic {
+    font-size: 18;
+    color: black;
+}
+
+.featured {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.featuredContent {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.mainPosts {
+    display: flex;
+    justify-content: space-between;
+    gap: 28px;
+}
+
+.Image {
+    width: 100%;
+    height: 368px;
+    object-fit: cover;
+}
+
+.mainPosts article {
+    width: 50%;
+}
+
+.black {
+    color: black;
+    font-size: 12px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.sidePosts article {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: calc(100% / 3)
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.photo {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.postMain {
+    color: black;
+    font-size: 24px;
+}
+
+.postDescryption {
+    color: black;
+    font-size: 18px;
+}
+
+.sidePosts {
+    display: flex;
+    justify-content: space-between;
+    gap: 28px;
+}
+
+.sideImage {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.postSide {
+    color: black;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+button {
+    width: 238px;
+    height: 42px;
+    background-color: #303030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.featuredConteiner {
+    display: flex;
+    width: 100%;
+}
+
+.subscriberImage {
+    width: 50%;
+    height: 360px;
+    object-fit: cover;
+}
+
+.subscriber {
+    background-color: black;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.big {
+    font-size: 34px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
