@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(space.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  height: 100vh;
+}
+
+.earth {
+  width: 300px;
+  height: 300px;
+  z-index: 0;
+}
+
+.radius {
+  width: 600px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px dotted rgb(111, 111, 111);
+  position: absolute;
+  border-top: none;
+  z-index: 1;
+}
+.moon {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  transform: rotateZ(0deg) translate(290px);
+  z-index: 2;
+  animation-name: run;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes run{
+    0%{
+
+    }
+    12.5%{
+        transform: rotateZ(45deg) translate(130px)
+    }
+    25%{
+        transform: rotateZ(90deg) translate(90px);
+    }
+    37%{
+        transform: rotateZ(135deg) translate(130px);
+    }
+    50%{
+        z-index: 2;
+        transform: rotateZ(180deg) translate(290px);
+    }
+    62.5%{
+        z-index: -1;
+        transform: rotateZ(225deg) translate(130px);
+    }
+    75%{
+        transform: rotateZ(270deg) translate(90px);
+    }
+    87.5%{
+        z-index: -1;
+        transform: rotateZ(315deg) translate(130px);
+    }
+    100%{
+        z-index: 2;
+        transform: rotateZ(360deg) translate(290px);
+    }
+}

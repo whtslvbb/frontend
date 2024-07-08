@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+body {
+  background-color: lightseagreen;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100vh;
+}
+
+.rectangle {
+  height: 72px;
+  width: 72px;
+  background-color: white;
+  animation-name: run;
+  animation-timing-function:ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+}
+
+@keyframes run {
+  0% {
+  }
+
+  25%{
+    border-radius: 25%;
+  }
+
+  50% {
+    rotate: 180deg;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+  }
+
+  75%{
+    border-radius: 25%;
+  }
+
+  100% {
+    rotate: 360deg;
+  }
+}
