@@ -1,0 +1,291 @@
+@import "./base/base";
+@import "./base/mixins";
+@import "./base/variables";
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100vh;
+  background-color: coral;
+}
+
+.wrapper {
+  width: 100%;
+  margin-top: 150px;
+  height: 250px;
+  background-color: rgb(11, 138, 184);
+
+  &-menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    z-index: 3;
+
+    .box {
+      width: 80px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      transition: 1s;
+      left: 0
+    }
+
+    .boxGradient {
+      position: absolute;
+      width: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      transition: 1s;
+      right: -80px;
+    }
+
+    .wrap {
+      width: 80px;
+      height: 100%;
+      position: relative;
+    }
+
+
+    .twitter {
+      @extend li;
+
+      .boxGradient {
+        @include gradient(linear-gradient(180deg,
+            rgba(87, 207, 255, 1) 0%,
+            rgba(0, 212, 255, 1) 100%),
+          none);
+      }
+    }
+
+    .twitter:hover .boxGradient {
+      right: 0px;
+      cursor: pointer;
+    }
+
+    .twitter:hover .box {
+      left: -80px;
+      cursor: pointer;
+    }
+
+    .twitter:hover &-text {
+      width: 400px;
+      z-index: 1;
+      visibility: visible;
+    }
+
+    .facebook {
+      @extend li;
+
+      .boxGradient {
+        @include gradient(linear-gradient(180deg,
+            rgba(49, 93, 171, 1) 0%,
+            rgba(18, 48, 93, 1) 100%),
+          none);
+      }
+    }
+
+    .facebook:hover .boxGradient {
+      right: 0px;
+      cursor: pointer;
+    }
+
+    .facebook:hover .box {
+      left: -80px;
+      cursor: pointer;
+    }
+
+
+    .facebook:hover &-text {
+      width: 400px;
+      z-index: 1;
+      visibility: visible;
+    }
+
+    .linkedin {
+      @extend li;
+
+      .boxGradient {
+        @include gradient(linear-gradient(180deg,
+            rgba(88, 142, 236, 1) 0%,
+            rgba(19, 101, 223, 1) 100%),
+          none);
+      }
+    }
+
+    .linkedin:hover .boxGradient {
+      right: 0px;
+      cursor: pointer;
+    }
+
+    .linkedin:hover .box {
+      left: -80px;
+      cursor: pointer;
+    }
+
+    .linkedin:hover &-text {
+      width: 400px;
+      z-index: 1;
+      visibility: visible;
+    }
+
+    .instagram {
+      @extend li;
+
+      .boxGradient {
+        @include gradient(linear-gradient(180deg,
+            rgba(57, 207, 25, 1) 0%,
+            rgba(18, 172, 112, 1) 100%),
+          none);
+      }
+    }
+
+    .instagram:hover .boxGradient {
+      right: 0px;
+      cursor: pointer;
+    }
+
+    .instagram:hover .box {
+      left: -80px;
+      cursor: pointer;
+    }
+
+    .instagram:hover &-text {
+      width: 400px;
+      z-index: 1;
+      visibility: visible;
+    }
+
+    .youtube {
+      @extend li;
+
+      .boxGradient {
+        @include gradient(linear-gradient(180deg,
+            rgba(255, 84, 84, 1) 0%,
+            rgba(205, 4, 4, 1) 100%),
+          none);
+      }
+    }
+
+    .youtube:hover .boxGradient {
+      right: 0px;
+      cursor: pointer;
+    }
+
+    .youtube:hover .box {
+      left: -80px;
+      cursor: pointer;
+    }
+
+    .youtube:hover &-text {
+      width: 400px;
+      z-index: 1;
+      visibility: visible;
+    }
+
+    .tumblr {
+      @extend li;
+
+      .boxGradient {
+        @include gradient(linear-gradient(180deg,
+            rgba(35, 47, 94, 1) 0%,
+            rgba(17, 36, 99, 1) 100%),
+          none);
+      }
+    }
+
+    .tumblr:hover .boxGradient {
+      right: 0px;
+      cursor: pointer;
+    }
+
+    .tumblr:hover .box {
+      left: -80px;
+      cursor: pointer;
+    }
+
+
+
+    .tumblr:hover &-text {
+      width: 400px;
+      z-index: 1;
+      visibility: visible;
+    }
+
+    .dribbbler {
+      @extend li;
+
+      .boxGradient {
+        @include gradient(linear-gradient(180deg,
+            rgba(245, 67, 242, 1) 0%,
+            rgba(215, 147, 255, 1) 100%),
+          none);
+      }
+
+    }
+
+    .dribbbler:hover .boxGradient {
+      right: 0px;
+      cursor: pointer;
+    }
+
+    .dribbbler:hover .box {
+      left: -80px;
+      cursor: pointer;
+    }
+
+    .dribbbler:hover &-text {
+      width: 400px;
+      z-index: 1;
+      visibility: visible;
+    }
+
+    &-icon {
+      color: white;
+    }
+
+    &-text {
+      width: 0px;
+      height: 100%;
+      background-color: white;
+      visibility: hidden;
+      transition: 1s;
+      position: relative;
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        width: 400px;
+        padding: 0 20px;
+        height: 100%;
+        position: absolute;
+      }
+    }
+
+    &-empty {
+      flex: 1;
+      height: 100%;
+      z-index: 5;
+      background-color: rgb(11, 138, 184);
+    }
+  }
+}
+
+li {
+  background-color: $item-background-color;
+  height: 100%;
+  border-left: 1px solid rgb(11, 138, 184);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 5s;
+  z-index: 2;
+  overflow: hidden;
+}
