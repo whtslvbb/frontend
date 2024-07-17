@@ -1,0 +1,241 @@
+.libre-franklin-regular {
+  font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.libre-franklin-semiBold {
+  font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.libre-franklin-bold {
+  font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+}
+
+header {
+  background-image: url(./images/bg.png);
+  aspect-ratio: 45/24;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.box {
+  background-color: #c66c49;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.3;
+}
+
+.big {
+  font-size: 52px;
+}
+
+.padding {
+  padding: 36px 8%;
+}
+
+.about {
+  background-color: #ffffff;
+  gap: 76px;
+}
+
+.skills {
+  background-color: #fffaf2;
+  gap: 76px;
+}
+
+.portfolio {
+  background-color: white;
+  gap: 76px;
+}
+
+.contact {
+  background-color: #fffaf2;
+  gap: 76px;
+}
+
+.grid {
+  grid-template-columns: 1fr 2fr;
+}
+
+.statistic {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.gradient {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, #c66c49 65%, #f5d6ab 65%);
+}
+
+.Arrows {
+  width: 62px;
+}
+
+.img {
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+  max-width: 350px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 2fr 1fr 2fr;
+  gap: 16px;
+  flex: 1;
+  aspect-ratio: 3/2;
+  max-width: 600px;
+}
+
+.sea {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.bridge {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.house {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.river {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.width{
+   width: 25% ;
+}
+
+.description{
+    font-size: 24px;
+}
+
+.gap{
+    gap: 80px;
+}
+
+.burger{
+    width: 40px;
+    object-fit: contain;
+    padding: 0 8px;
+    display: none;
+}
+
+@media screen and (max-width:875px){
+    .media{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .libre-franklin-semiBold{
+        font-size: 12px;
+    }
+
+    .skills .libre-franklin-regular{
+        font-size: 12px;
+    }
+
+    .about .libre-franklin-regular{
+        font-size: 12px;
+    }
+
+    .portfolio .libre-franklin-regular{
+        font-size: 12px;
+    }
+
+    header .text-decoration-underline{
+        font-size: 12px;
+    }
+    header{
+        text-align: center;
+    }
+
+    .portfolio .libre-franklin-semiBold {
+        font-size: 14px;
+    }
+
+    .portfolio{
+        text-align: center;
+    }
+
+    .width{
+        width: 100%;
+    }
+
+    .about {
+        gap: 32px;
+      }
+      
+      .skills {
+        gap: 32px;
+      }
+      
+      .portfolio {
+        gap: 32px;
+      }
+      
+      .contact {
+        gap: 32px;
+      }
+
+      .libre-franklin-bold{
+        text-align: center;
+      }
+
+      .Arrows{
+        display: none;
+      }
+
+      a{
+        display: none;
+      }
+
+      .big{
+        font-size: 20px;
+      }
+
+      .description{
+        font-size: 14px;
+    }
+
+    .logo{
+        margin: 0 auto;
+    }
+
+    .gap{
+        gap: 0;
+    }
+
+    .burger{
+        display: block;
+    }
+    
+}
