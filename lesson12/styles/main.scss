@@ -1,0 +1,574 @@
+@import "./base/base";
+@import "./base/mixins";
+@import "./base/variables";
+
+@import url(fonts.css);
+
+header {
+    background-image: url(../images/Bitmap.png);
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: $image;
+    background-position: center;
+    position: relative;
+    margin-bottom: 44px;
+
+    .mask {
+        z-index: 1;
+        position: absolute;
+        background: linear-gradient(0deg, #ff4e50 15%, #f9d423 85%);
+        width: 100%;
+        height: 100%;
+        opacity: 0.1;
+    }
+
+    .box {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        padding: 32px 48px;
+        display: flex;
+        justify-content: space-around;
+
+        &-logo {
+            padding: 12px 16px;
+            font-family: $main;
+            font-size: 20px;
+            color: white;
+        }
+
+        menu {
+            display: flex;
+            gap: 4px;
+            font-family: $logger;
+
+            div {
+                padding: 12px 16px;
+                color: white;
+            }
+
+            .sign {
+                @include button(white, none, white);
+            }
+        }
+    }
+
+    main {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 36px;
+
+        .text {
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 36px;
+
+            &-main {
+                white-space: pre-line;
+                font-family: $main;
+                font-size: 52px;
+                line-height: 64px;
+            }
+
+            &-side {
+                font-family: $decryption;
+                font-size: 24px;
+            }
+        }
+
+        .button {
+            font-size: 14px;
+            font-family: $main;
+            @include button(white, #ff4e50, #ff4e50);
+        }
+    }
+}
+
+section {
+    padding: 44px 12px;
+}
+
+.steps {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+
+    &-text {
+        color: black;
+        font-size: 26px;
+        font-family: $main;
+    }
+
+    &-content {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        .card {
+            height: 400px;
+            max-width: 300px;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 24px;
+            justify-content: end;
+            gap: 26px;
+            flex: 1;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            box-shadow: $image;
+
+            .step {
+                text-transform: uppercase;
+                @include button(white, #ff4e50, #ff4e50);
+                font-family: $decryption;
+                padding: 4px 14px;
+                font-size: 10px;
+                width: fit-content;
+            }
+
+            .main-text {
+                font-family: $main;
+                font-size: 24px;
+            }
+
+            .side-text {
+                font-family: $decryption;
+                font-size: 14px;
+            }
+        }
+
+        .home {
+            background-image: url(../images/Bitmap-2.png);
+        }
+
+        .car {
+            background-image: url(../images/Bitmap-3.png);
+        }
+
+        .beach {
+            background-image: url(../images/Bitmap-4.png);
+        }
+    }
+}
+
+.partner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+
+    &-text {
+        color: black;
+        font-size: 26px;
+        font-family: $main;
+    }
+
+    &-team {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+
+        .person {
+            width: 236px;
+            padding: 20px 0;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 24px;
+
+            &-photo {
+                width: 120px;
+                height: 120px;
+                border-radius: 100%;
+                background-size: cover;
+                background-position: center;
+                position: relative;
+
+                .icon {
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    border: 4px solid white;
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                }
+
+                .red {
+                    background-color: #ff4e50;
+                }
+
+                .blue {
+                    background-color: #667df3;
+                }
+
+                .green {
+                    background-color: #19d4ca;
+                }
+
+                .yellow {
+                    background-color: #ffa710;
+                }
+            }
+
+            &-name {
+                font-size: 14px;
+                font-family: $main;
+            }
+
+            &-about {
+                font-size: 14px;
+                font-family: $decryption;
+                text-align: center;
+            }
+        }
+
+        .hunter {
+            background-image: url(../images/Bitmap-5.png);
+        }
+
+        .wells {
+            background-image: url(../images/Bitmap-6.png);
+        }
+
+        .bennett {
+            background-image: url(../images/Bitmap-7.png);
+        }
+
+        .pierce {
+            background-image: url(../images/Bitmap-8.png);
+        }
+    }
+
+    &-button {
+        @include button(#ff4e50, white, #ff4e50);
+        font-size: 14px;
+    }
+}
+
+.ideas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+
+    &-text {
+        color: black;
+        font-size: 26px;
+        font-family: $main;
+    }
+
+    &-collapse {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 16px;
+        flex: 1;
+        max-width: 1024px;
+
+        .activity {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-family: $main;
+            font-size: 22px;
+            box-shadow: $image;
+            min-height: 300px;
+            text-align: center;
+        }
+
+        .Active {
+            background-image: url(../images/Bitmap-9.png);
+        }
+
+        .Health {
+            background-image: url(../images/Bitmap-10.png);
+        }
+
+        .Expeditions {
+            background-image: url(../images/Bitmap-11.png);
+        }
+
+        .Games {
+            background-image: url(../images/Bitmap-12.png);
+        }
+
+        .Education {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row: 2;
+            background-image: url(../images/Bitmap-13.png);
+        }
+
+        .Relaxation {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row: 3;
+            background-image: url(../images/Bitmap-14.png);
+        }
+
+        .Traveling {
+            background-image: url(../images/Bitmap-15.png);
+        }
+    }
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+
+    &-text {
+        color: black;
+        font-size: 26px;
+        font-family: $main;
+    }
+
+    &-data {
+        align-items: center;
+        font-size: 16px;
+        font-family: $decryption;
+        gap: 16px;
+        display: flex;
+        flex-direction: column;
+
+        form {
+            display: flex;
+            gap: 24px;
+
+            .button {
+                @include button(white, #ff4e50, #ff4e50);
+                font-size: 14px;
+                font-family: $main;
+                padding: 14px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            input {
+                padding: 14px;
+                color: #999999;
+                font-family: $decryption;
+                width: 272px;
+                font-size: 14px;
+                border: 2px solid #d4d4d4;
+            }
+        }
+    }
+}
+
+footer {
+    padding: 44px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .line {
+        width: 100%;
+        height: 2px;
+        background-color: #ff4e50;
+    }
+
+    .navigation {
+        padding: 36px;
+        width: 100%;
+        max-width: 1000px;
+        height: 10px;
+        display: flex;
+        justify-content: space-between;
+
+        &-dreamshare {
+            color: #ff4e50;
+            font-family: $logger;
+            font-size: 16px;
+        }
+
+        &-company {
+            font-family: $main;
+            font-size: 14px;
+            display: flex;
+            flex-direction: column;
+
+            .wrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                color: #999999;
+                font-family: $decryption;
+                padding: 20px 0px;
+            }
+        }
+
+        &-partners {
+            font-family: $main;
+            font-size: 14px;
+        }
+
+        &-design {
+            font-family: $main;
+            font-size: 10px;
+            color: #CCCCCC;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+    }
+}
+
+@media screen and (max-width:760px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        max-height: 540px;
+
+        .box-logo {
+            position: absolute;
+            margin-top: 120px;
+        }
+
+        main {
+            gap: 12px;
+            padding: 0px 20px;
+
+            .text {
+                gap: 24px;
+
+                &-main {
+                    font-size: 30px;
+                    line-height: 32px;
+                }
+
+                &-side {
+                    font-size: 18px;
+                }
+            }
+
+            .button {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    .steps {
+        &-content {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            .card {
+                height: 300px;
+                width: 100%;
+                max-width: none;
+                min-height: 240px;
+            }
+        }
+    }
+
+    .partner {
+        &-button {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .ideas {
+        &-collapse {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            flex: 1;
+            width: 100%;
+
+            .activity {
+                min-height: 120px;
+            }
+        }
+    }
+
+    .form {
+        gap: 24px;
+
+        &-data {
+            gap: 12px;
+
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                width: 100%;
+
+                .button {
+                    width: 100%;
+                }
+
+                input {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    footer {
+        .navigation {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+
+            &-company {
+                gap: 10px;
+                width: 100%;
+                align-items: center;
+
+                .wrapper {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    width: 100%;
+                    gap: 10px;
+                    padding: 0px;
+                }
+            }
+
+            &-design {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-bottom: 20px;
+
+            }
+        }
+    }
+}
