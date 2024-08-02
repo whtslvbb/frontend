@@ -14,6 +14,7 @@ const myMath = {
     console.log(this.a - this.b);
   },
 };
+
 myMath.division();
 myMath.multiplication();
 myMath.subtraction();

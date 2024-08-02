@@ -5,8 +5,11 @@ const person = {
     console.log(this.firstName, this.secondName);
   },
 };
+
 person.showData();
+
 const newPerson = Object.assign({}, person);
+
 newPerson.firstName = "Petro";
 newPerson.secondName = "Petriv";
 newPerson.showData();
