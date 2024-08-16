@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+.text {
+  padding: 10px;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.boxColor {
+  margin: 0 auto;
+  width: 450px;
+  height: 450px;
+  display: none;
+  flex-wrap: wrap;
+}
+
+.boxImage {
+  margin: 0 auto;
+  width: 450px;
+  height: 450px;
+  display: none;
+  flex-wrap: wrap;
+}
+
+.block {
+  width: 150px;
+  height: 150px;
+  border: 2px solid black;
+}
+
+.images {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.green {
+  background-color: green;
+}
+
+.coral {
+  background-color: coral;
+}
+
+.brown {
+  background-color: brown;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.grey {
+  background-color: grey;
+}
+
+.ultras1 {
+  background-image: url(./images/1.jpg);
+}
+
+.ultras2 {
+  background-image: url(./images/2.jpeg);
+}
+
+.ultras3 {
+  background-image: url(./images/3.jpg);
+}
+
+.ultras4 {
+  background-image: url(./images/4.webp);
+}
+
+.ultras5 {
+  background-image: url(./images/5.jpg);
+}
+
+.ultras6 {
+  background-image: url(./images/6.webp);
+}
+
+.ultras7 {
+  background-image: url(./images/7.jpeg);
+}
+
+.ultras8 {
+  background-image: url(./images/8.jpg);
+}
+
+.ultras9 {
+  background-image: url(./images/9.jpg);
+}
