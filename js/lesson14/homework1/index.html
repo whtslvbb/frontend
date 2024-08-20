@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="task">
+        <h1>Task move</h1>
+        <div>
+          Значення переміщується з одного інпута в інший тільки якщо там є
+          значення
+        </div>
+        <form class="move" name="move">
+          <input type="text" class="moveInput" required />
+          <input type="button" class="moveButton" value="move" />
+          <input type="text" class="moveInput" />
+        </form>
+      </div>
+      <div class="task">
+        <h1>Task placeholder</h1>
+        <div>
+          Значення переміщується в placeholder тільки якщо там є значення
+        </div>
+        <form class="placeholder" name="placeholder">
+          <input type="text" class="placeholderInput" />
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

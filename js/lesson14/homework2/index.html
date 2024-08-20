@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="creator">
+      <div class="header">Create your account</div>
+      <form name="person">
+        <div class="dataBox">
+          <div class="text">First Name</div>
+          <input type="text" placeholder="type here..." name="name" required />
+        </div>
+        <div class="dataBox">
+          <div class="text">Second Name</div>
+          <input
+            type="text"
+            placeholder="type here..."
+            name="surname"
+            required
+          />
+        </div>
+        <div class="dataBox">
+          <div class="text">Email Address</div>
+          <input type="text" placeholder="enter email" name="email" required />
+        </div>
+        <div class="pointBox">
+          <div class="point">
+            <input type="radio" name="sex" value="men" checked />
+            <div class="text">men</div>
+          </div>
+          <div class="point">
+            <input type="radio" name="sex" value="woman" />
+            <div class="text">woman</div>
+          </div>
+        </div>
+        <div class="dataBox">
+          <div class="text">Position</div>
+          <select name="jobs" required>
+            <option value="">Choose...</option>
+            <option value="Frontend">Frontend</option>
+            <option value="Backend">Backend</option>
+            <option value="QC/QA">QC/QA</option>
+          </select>
+        </div>
+        <div class="point">
+          <input type="checkbox" name="checkbox" required />
+          <div class="text">I agree all statements in Terms of servise</div>
+        </div>
+        <input type="submit" class="button" name="button" value="Sign Up" />
+      </form>
+    </div>
+    <div class="data">
+      <div class="header long"></div>
+      <div class="content">
+        <div class="photo"></div>
+        <div class="name">dadasda dada</div>
+        <div class="position">adada</div>
+        <hr class="line" />
+        <input type="button" class="profileButton" value="Sign Out" />
+      </div>
+      <div class="footer"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

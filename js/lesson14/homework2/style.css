@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.creator {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid lightgrey;
+  border-radius: 12px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background-color: rgb(46, 162, 119);
+  font-size: 24px;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background-color: rgb(46, 162, 119);
+  color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.profileButton {
+  color: rgb(89, 136, 89);
+  min-width: 100px;
+  margin: auto;
+  background-color: white;
+  border: 1px solid rgb(89, 136, 89);
+}
+
+.profileButton:hover {
+  color: white;
+  background-color: rgb(89, 136, 89);
+}
+
+.line {
+  opacity: 0.2;
+}
+
+.content {
+  padding-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.data {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid lightgrey;
+  border-radius: 12px;
+  margin: auto;
+  margin-top: 50px;
+  max-width: 30%;
+  display: none;
+}
+
+form {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid lightgray;
+}
+
+.dataBox {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.point {
+  display: flex;
+  justify-content: start;
+  gap: 4px;
+}
+
+.pointBox {
+  display: flex;
+  justify-content: start;
+  gap: 8px;
+}
+
+.text {
+  font-size: 14px;
+  font-weight: 100;
+}
+
+select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid lightgray;
+}
+
+.button {
+  background-color: rgb(1, 156, 1, 0.5);
+  color: white;
+}
+
+.long {
+  height: 100px;
+}
+
+.photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  border: 8px solid white;
+  background-image: url();
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: -50px auto;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 50px;
+}
