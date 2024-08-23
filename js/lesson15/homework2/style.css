@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.white {
+  height: 50%;
+  background-color: white;
+}
+
+.black {
+  height: 50%;
+  background-color: black;
+}
+
+.pencil {
+  position: absolute;
+  top: 50%;
+  height: 600px;
+  left: 100px;
+  width: 100px;
+  object-fit: cover;
+  transform: translateY(-50%);
+}
+
+.pad {
+  background-image: url(pad.png);
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  height: 800px;
+  width: 1100px;
+  background-size: cover;
+  background-position: center;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alarm {
+  left: 50%;
+  position: absolute;
+  top: 40%;
+  width: 800px;
+  transform: translate(-50%, -50%);
+  display: none;
+  flex-direction: column;
+  background-color: lightpink;
+  gap: 16px;
+  padding: 16px;
+  color: darkred;
+  border-radius: 4px;
+  border: 1px solid darkred;
+  font-size: 20px;
+}
+
+.alarmBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.alarmText {
+  font-weight: bold;
+  color: darkred;
+}
+
+.cross {
+  cursor: pointer;
+}
+
+.content {
+  background-color: white;
+  width: 1040px;
+  height: 628px;
+  border-radius: 12px;
+  display: flex;
+}
+
+.box {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.list {
+  border-right: 4px solid black;
+}
+
+.plan {
+  border-left: 4px solid black;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.redText {
+  color: darkred;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.tasks {
+  color: black;
+  font-size: 28px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.inputText {
+  border: none;
+  border-bottom: 2px solid black;
+  width: 300px;
+  padding: 8px;
+  font-size: 20px;
+  outline: none;
+}
+
+.button {
+  padding: 14px;
+  font-size: 20px;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  background-color: darkslategray;
+  cursor: pointer;
+}
