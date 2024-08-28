@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.top-block {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.center-block {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.block {
+  min-height: 250px;
+  border-radius: 4px;
+  border: 1px solid lightgrey;
+  background-color: rgb(236, 235, 235);
+  margin: 20px 0;
+  padding: 24px;
+  position: relative;
+}
+
+input[type="button"] {
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+}
+
+.edit-block,
+.style-block {
+  display: none;
+}
+
+.edit-area {
+  resize: none;
+  width: 100%;
+  min-height: 150px;
+  padding: 20px;
+}
+
+.show {
+  display: flex;
+}
+
+.gapX {
+  display: flex;
+  gap: 12px;
+}
+
+.gapY {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.colors {
+  width: 150px;
+  height: 150px;
+  outline: 1px solid black;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translate(0%, -50%);
+  display: flex;
+  flex-wrap: wrap;
+  display: none;
+}
+
+.fontFamily {
+  padding: 8px;
+  border-radius: 4px;
+  width: 300px;
+  outline: none;
+}
+
+.fontFamily:focus {
+  box-shadow: 0px 0px 2px 3px lightblue;
+}
+
+.color-box {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.cursive {
+  font-style: italic;
+}
+
+.second,
+.first,
+.create-list,
+.create-table {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+}
+
+.red {
+  background-color: red;
+}
+
+.red:hover {
+  background-color: darkred;
+}
+
+.blue:focus {
+  box-shadow: 0px 0px 2px 3px lightskyblue;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-create-list {
+  width: 100px;
+}
+
+.addInput {
+  padding: 8px;
+  display: flex;
+  flex: 1;
+  outline: none;
+  border-radius: 8px;
+  border: 1px solid lightgrey;
+  max-width: 600px;
+}
+
+.addInput:focus {
+  box-shadow: 0px 0px 2px 2px lightskyblue;
+}
+
+.yellow:focus {
+  box-shadow: 0px 0px 2px 3px yellow;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.blue:hover {
+  background-color: darkblue;
+}
+
+.green {
+  background-color: green;
+}
+
+.green:hover {
+  background-color: darkgreen;
+}
+
+.yellow {
+  background-color: orange;
+}
+
+.yellow:hover {
+  background-color: darkgoldenrod;
+}
+
+.grey {
+  background-color: gray;
+}
+
+.grey:hover {
+  background-color: darkgray;
+}
+
+.grey:focus {
+  box-shadow: 0px 0px 2px 3px lightgray;
+}

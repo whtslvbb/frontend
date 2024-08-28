@@ -48,6 +48,8 @@ const isWho = (person) => {
 };
 
 const showData = (e) => {
+  console.log(12313);
+  
   e.preventDefault();
   person.textContent = loginForm.name.value + " " + loginForm.surname.value;
   isWho(loginForm.sex.value);
@@ -65,6 +67,7 @@ const showLogin = () => {
   loginForm.jobs.value = "";
   loginForm.sex[0].checked = true;
   loginForm.checkbox.checked = false;
+  loginForm.button.style.backgroundColor = "rgb(1, 156, 1 , 0.5)";
 };
 
 loginForm.button.addEventListener("submit", showData);

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="first show">
+        <div class="block top-block">
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="center-block">
+          <input type="button" value="edit" class="btn-edit yellow" />
+          <input type="button" value="style" class="btn-style blue" />
+        </div>
+        <div class="block bottom-block">
+          <div class="edit-block">
+            <textarea class="edit-area"></textarea>
+            <input type="button" value="add" class="btn-add red" />
+            <input type="button" value="save" class="btn-save green" />
+          </div>
+          <div class="style-block">
+            <form name="style" class="gapY">
+              <div class="form-size gapY">
+                <h4>Font Size</h4>
+                <div class="gapX">
+                  <input
+                    type="radio"
+                    onclick="fontSize()"
+                    name="size"
+                    value="12px"
+                  /><span>12px</span>
+                  <input
+                    type="radio"
+                    onclick="fontSize()"
+                    name="size"
+                    value="14px"
+                    checked
+                  /><span>14px</span>
+                  <input
+                    type="radio"
+                    onclick="fontSize()"
+                    name="size"
+                    value="16px"
+                  /><span>16px</span>
+                  <input
+                    type="radio"
+                    onclick="fontSize()"
+                    name="size"
+                    value="18px"
+                  /><span>18px</span>
+                  <input
+                    type="radio"
+                    onclick="fontSize()"
+                    name="size"
+                    value="20px"
+                  /><span>20px</span>
+                </div>
+              </div>
+              <div class="form-family gapY">
+                <h4>Font Family</h4>
+                <select class="fontFamily">
+                  <option value="" class="choose" selected>
+                    Choose option...
+                  </option>
+                  <option value="cursive">cursive</option>
+                  <option value="fantasy">fantasy</option>
+                  <option value="monospace">monospace</option>
+                  <option value="sans-serif">sans-serif</option>
+                </select>
+              </div>
+              <div class="form-color gapY">
+                <h4>Colors</h4>
+                <div class="gapX">
+                  <input
+                    type="button"
+                    value="Color of text"
+                    class="btn-text-color grey"
+                  />
+                  <input
+                    type="button"
+                    value="Background color"
+                    class="btn-bg-color grey"
+                  />
+                </div>
+                <div class="colors">
+                  <div class="color-box"></div>
+                  <div class="color-box"></div>
+                  <div class="color-box"></div>
+                  <div class="color-box"></div>
+                  <div class="color-box"></div>
+                  <div class="color-box"></div>
+                  <div class="color-box"></div>
+                  <div class="color-box"></div>
+                  <div class="color-box"></div>
+                </div>
+              </div>
+              <div class="form-style gapY">
+                <h4>Style</h4>
+                <div class="gapX">
+                  <input type="checkbox" class="fontWeight" />
+                  <span>Bold text</span>
+                  <input type="checkbox" class="fontCursive" />
+                  <span>Cursive text</span>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="second">
+        <div class="block gapY">
+          <h2>Choose what you want</h2>
+          <form class="gapX">
+            <div>
+              <input type="radio" name="choose" class="btn-table" />
+              <span>table</span>
+            </div>
+            <div>
+              <input type="radio" name="choose" class="btn-list" />
+              <span>list</span>
+            </div>
+          </form>
+          <div class="create-list">
+            <form name="form-list" class="gapY">
+              <div class="gapX box">
+                <span>Count LI</span>
+                <input type="number" name="count" class="addInput" />
+              </div>
+              <div class="gapX box">
+                <span>Type of marks</span>
+                <select name="type" class="addInput">
+                  <option value="circle">circle</option>
+                  <option value="disc">disc</option>
+                  <option value="square">square</option>
+                </select>
+              </div>
+              <input
+                type="button"
+                value="Create list"
+                name="create"
+                class="btn-create-list green"
+              />
+            </form>
+          </div>
+          <div class="create-table">
+            <form name="form-table" class="gapY">
+              <div class="gapX box">
+                <span>Count TR:</span>
+                <input
+                  type="number"
+                  name="countTR"
+                  placeholder="Count TR:"
+                  class="addInput"
+                />
+              </div>
+              <div class="gapX box">
+                <span>Count TD:</span>
+                <input
+                  type="number"
+                  name="countTD"
+                  placeholder="Count TD:"
+                  class="addInput"
+                />
+              </div>
+              <h4>Add style to your table:</h4>
+              <div class="gapX box">
+                <span>Width of TD:</span>
+                <input
+                  type="number"
+                  name="widthTD"
+                  placeholder="Width of TD:"
+                  class="addInput"
+                />
+              </div>
+              <div class="gapX box">
+                <span>Height of TD:</span>
+                <input
+                  type="number"
+                  name="heightTD"
+                  placeholder="Height of TD:"
+                  class="addInput"
+                />
+              </div>
+              <div class="gapX box">
+                <span>Width of border:</span>
+                <input
+                  type="number"
+                  name="borderWidth"
+                  placeholder="Width of border:"
+                  class="addInput"
+                />
+                <span>Type of border</span>
+                <select name="borderType" class="addInput">
+                  <option value="solid">solid</option>
+                  <option value="dashed">dashed</option>
+                  <option value="double">double</option>
+                  <option value="dotted">dotted</option>
+                </select>
+                <span>Color of border</span>
+                <select name="borderColor" class="addInput">
+                  <option value="black">black</option>
+                  <option value="red">red</option>
+                  <option value="white">white</option>
+                  <option value="green">green</option>
+                  <option value="blue">blue</option>
+                </select>
+              </div>
+              <input
+                type="button"
+                name="createTable"
+                value="Create table"
+                class="green btn-create-list"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
