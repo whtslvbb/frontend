@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>homework</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="block">
+      <div class="box">
+        <div class="todayDate"></div>
+        <div class="time"></div>
+      </div>
+    </div>
+    <div class="block">
+      <div class="box second">
+        <div class="sec">00:00:00:000</div>
+        <form name="time">
+          <input type="button" value="start" name="start" />
+          <input type="button" value="loop" name="loop" />
+          <input type="button" value="stop" name="stop" />
+          <input type="button" value="reset" name="reset" />
+        </form>
+      </div>
+      <div class="content"></div>
+    </div>
+    <div class="block">
+      <div class="timer">
+        <div class="numberTimer">25</div>
+        <div>MINUTES</div>
+        <div class="buttons">
+          <input type="button" value="+" class="plus" />
+          <input type="button" value="-" class="minus" />
+        </div>
+      </div>
+      <div class="box third">
+        <div class="thirdTimer numberTimer">00:00</div>
+        <form name="timer" class="formTimer">
+          <input type="button" value="start" name="start" />
+          <input type="button" value="stop" name="stop" />
+          <input type="button" value="reset" name="reset" />
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
