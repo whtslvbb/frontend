@@ -1,0 +1,568 @@
+@import url(fonts.css);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-image: url(../images/Bitmap.png);
+  width: 100%;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0px 0px 100px 400px rgba(0, 0, 0, 0.2);
+  background-position: center;
+  position: relative;
+  margin-bottom: 44px;
+}
+header .mask {
+  z-index: 1;
+  position: absolute;
+  background: linear-gradient(0deg, #ff4e50 15%, #f9d423 85%);
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+}
+header .box {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 32px 48px;
+  display: flex;
+  justify-content: space-around;
+}
+header .box-logo {
+  padding: 12px 16px;
+  font-family: "Montserrat-Bold";
+  font-size: 20px;
+  color: white;
+}
+header .box menu {
+  display: flex;
+  gap: 4px;
+  font-family: "Montserrat-Regular";
+}
+header .box menu div {
+  padding: 12px 16px;
+  color: white;
+}
+header .box menu .sign {
+  background-color: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 40px;
+  border: 2px solid white;
+  padding: 12px 16px;
+}
+header main {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+header main .text {
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+header main .text-main {
+  white-space: pre-line;
+  font-family: "Montserrat-Bold";
+  font-size: 52px;
+  line-height: 64px;
+}
+header main .text-side {
+  font-family: "Roboto-Light";
+  font-size: 24px;
+}
+header main .button {
+  font-size: 14px;
+  font-family: "Montserrat-Bold";
+  background-color: #ff4e50;
+  color: white;
+  cursor: pointer;
+  border-radius: 40px;
+  border: 2px solid #ff4e50;
+  padding: 12px 16px;
+}
+
+section {
+  padding: 44px 12px;
+}
+
+.steps {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+.steps-text {
+  color: black;
+  font-size: 26px;
+  font-family: "Montserrat-Bold";
+}
+.steps-content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.steps-content .card {
+  height: 400px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 24px;
+  justify-content: end;
+  gap: 26px;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  box-shadow: inset 0px 0px 100px 400px rgba(0, 0, 0, 0.2);
+}
+.steps-content .card .step {
+  text-transform: uppercase;
+  background-color: #ff4e50;
+  color: white;
+  cursor: pointer;
+  border-radius: 40px;
+  border: 2px solid #ff4e50;
+  padding: 12px 16px;
+  font-family: "Roboto-Light";
+  padding: 4px 14px;
+  font-size: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.steps-content .card .main-text {
+  font-family: "Montserrat-Bold";
+  font-size: 24px;
+}
+.steps-content .card .side-text {
+  font-family: "Roboto-Light";
+  font-size: 14px;
+}
+.steps-content .home {
+  background-image: url(../images/Bitmap-2.png);
+}
+.steps-content .car {
+  background-image: url(../images/Bitmap-3.png);
+}
+.steps-content .beach {
+  background-image: url(../images/Bitmap-4.png);
+}
+
+.partner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+.partner-text {
+  color: black;
+  font-size: 26px;
+  font-family: "Montserrat-Bold";
+}
+.partner-team {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.partner-team .person {
+  width: 236px;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+}
+.partner-team .person-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.partner-team .person-photo .icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border: 4px solid white;
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.partner-team .person-photo .red {
+  background-color: #ff4e50;
+}
+.partner-team .person-photo .blue {
+  background-color: #667df3;
+}
+.partner-team .person-photo .green {
+  background-color: #19d4ca;
+}
+.partner-team .person-photo .yellow {
+  background-color: #ffa710;
+}
+.partner-team .person-name {
+  font-size: 14px;
+  font-family: "Montserrat-Bold";
+}
+.partner-team .person-about {
+  font-size: 14px;
+  font-family: "Roboto-Light";
+  text-align: center;
+}
+.partner-team .hunter {
+  background-image: url(../images/Bitmap-5.png);
+}
+.partner-team .wells {
+  background-image: url(../images/Bitmap-6.png);
+}
+.partner-team .bennett {
+  background-image: url(../images/Bitmap-7.png);
+}
+.partner-team .pierce {
+  background-image: url(../images/Bitmap-8.png);
+}
+.partner-button {
+  background-color: white;
+  color: #ff4e50;
+  cursor: pointer;
+  border-radius: 40px;
+  border: 2px solid #ff4e50;
+  padding: 12px 16px;
+  font-size: 14px;
+}
+
+.ideas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+.ideas-text {
+  color: black;
+  font-size: 26px;
+  font-family: "Montserrat-Bold";
+}
+.ideas-collapse {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 16px;
+  flex: 1;
+  max-width: 1024px;
+}
+.ideas-collapse .activity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: "Montserrat-Bold";
+  font-size: 22px;
+  box-shadow: inset 0px 0px 100px 400px rgba(0, 0, 0, 0.2);
+  min-height: 300px;
+  text-align: center;
+}
+.ideas-collapse .Active {
+  background-image: url(../images/Bitmap-9.png);
+}
+.ideas-collapse .Health {
+  background-image: url(../images/Bitmap-10.png);
+}
+.ideas-collapse .Expeditions {
+  background-image: url(../images/Bitmap-11.png);
+}
+.ideas-collapse .Games {
+  background-image: url(../images/Bitmap-12.png);
+}
+.ideas-collapse .Education {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row: 2;
+  background-image: url(../images/Bitmap-13.png);
+}
+.ideas-collapse .Relaxation {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 3;
+  background-image: url(../images/Bitmap-14.png);
+}
+.ideas-collapse .Traveling {
+  background-image: url(../images/Bitmap-15.png);
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+.form-text {
+  color: black;
+  font-size: 26px;
+  font-family: "Montserrat-Bold";
+}
+.form-data {
+  align-items: center;
+  font-size: 16px;
+  font-family: "Roboto-Light";
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.form-data form {
+  display: flex;
+  gap: 24px;
+}
+.form-data form .button {
+  background-color: #ff4e50;
+  color: white;
+  cursor: pointer;
+  border-radius: 40px;
+  border: 2px solid #ff4e50;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-family: "Montserrat-Bold";
+  padding: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-data form input {
+  padding: 14px;
+  color: #999999;
+  font-family: "Roboto-Light";
+  width: 272px;
+  font-size: 14px;
+  border: 2px solid #d4d4d4;
+}
+
+footer {
+  padding: 44px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .line {
+  width: 100%;
+  height: 2px;
+  background-color: #ff4e50;
+}
+footer .navigation {
+  padding: 36px;
+  width: 100%;
+  max-width: 1000px;
+  height: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .navigation-dreamshare {
+  color: #ff4e50;
+  font-family: "Montserrat-Regular";
+  font-size: 16px;
+}
+footer .navigation-company {
+  font-family: "Montserrat-Bold";
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+}
+footer .navigation-company .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #999999;
+  font-family: "Roboto-Light";
+  padding: 20px 0px;
+}
+footer .navigation-partners {
+  font-family: "Montserrat-Bold";
+  font-size: 14px;
+}
+footer .navigation-design {
+  font-family: "Montserrat-Bold";
+  font-size: 10px;
+  color: #CCCCCC;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+@media screen and (max-width: 760px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    max-height: 540px;
+  }
+  header .box-logo {
+    position: absolute;
+    margin-top: 120px;
+  }
+  header main {
+    gap: 12px;
+    padding: 0px 20px;
+  }
+  header main .text {
+    gap: 24px;
+  }
+  header main .text-main {
+    font-size: 30px;
+    line-height: 32px;
+  }
+  header main .text-side {
+    font-size: 18px;
+  }
+  header main .button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .steps-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .steps-content .card {
+    height: 300px;
+    width: 100%;
+    max-width: none;
+    min-height: 240px;
+  }
+  .partner-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ideas-collapse {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+    width: 100%;
+  }
+  .ideas-collapse .activity {
+    min-height: 120px;
+  }
+  .form {
+    gap: 24px;
+  }
+  .form-data {
+    gap: 12px;
+  }
+  .form-data form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+  .form-data form .button {
+    width: 100%;
+  }
+  .form-data form input {
+    width: 100%;
+  }
+  footer .navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  footer .navigation-company {
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+  }
+  footer .navigation-company .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    padding: 0px;
+  }
+  footer .navigation-design {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+}/*# sourceMappingURL=main.css.map */
