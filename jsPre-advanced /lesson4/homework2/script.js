@@ -11,11 +11,7 @@ class MyString{
     }
     ucWords(string){
         const stringSplit = string.split(' ')
-        const result = stringSplit.map((value) => {
-            const firstLetter = value[0].toUpperCase()
-            const sideWord = value.slice(1)
-            return firstLetter + sideWord
-        })
+        const result = stringSplit.map(this.ucFirst)
         return result.join(' ')
     }
 }

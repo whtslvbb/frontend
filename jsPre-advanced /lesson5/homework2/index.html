@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="content">
+      <div class="box">
+        <div>
+          <div class="text">Баланс</div>
+          <div class="quantity">1000 грн</div>
+        </div>
+        <div>
+          <div class="text">Пиво</div>
+          <div class="quantity">100 шт.</div>
+        </div>
+        <div>
+          <div class="text">Вино</div>
+          <div class="quantity">50 шт.</div>
+        </div>
+        <div>
+          <div class="text">Пепсі</div>
+          <div class="quantity">80 шт.</div>
+        </div>
+      </div>
+      <div class="box">
+        <form name="buyer">
+          <div>
+            <div class="text">Кількість</div>
+            <input type="number" name="quantity" required/>
+          </div>
+          <div class="radio" name="type">
+            <label>
+              <input type="radio" name="drink" checked/><span>Пиво</span>
+            </label>
+            <label>
+              <input type="radio" name="drink" /><span>Вино</span>
+            </label>
+            <label>
+              <input type="radio" name="drink" /><span>Пепсі</span>
+            </label>
+          </div>
+          <input class="button" type="button" name="add" value="Додати"></input>
+        </form>
+        <div class="area"></div>
+        <input class="button buyButton" type="button" value="Купити"></input>
+      </div>
+      <div class="box priceList"></div>
+      <div class="alert">
+        <div class="wrapper">
+          <button class="close">Close</button>
+        </div>
+        <div class="line"></div>
+        <div class="message"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+    <script src="module.js" type="module"></script>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
