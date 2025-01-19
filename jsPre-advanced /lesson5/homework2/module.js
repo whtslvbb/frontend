@@ -2,63 +2,92 @@ let cash = 1000;
 let beer = 100;
 let wine = 50;
 let pepsi = 80;
-export let bool = true;
+const beerPrice = 30;
+const winePrice = 70;
+const pepsiPrice = 50;
+
+export const isEnoughQuantity = (type, quantity) =>
+  getQuantity(type) >= quantity;
+
+export const getQuantity = (type) => {
+  switch (type) {
+    case "Пиво":
+      return getBeer();
+    case "Вино":
+      return getWine();
+    case "Пепсі":
+      return getPepsi();
+    default:
+      return;
+  }
+};
+
+export const getPrice = (type) => {
+  switch (type) {
+    case "Пиво":
+      return getBeerPrice();
+    case "Вино":
+      return getWinePrice();
+    case "Пепсі":
+      return getPepsiPrice();
+    default:
+      return;
+  }
+};
+
+export const setQuantityByType = (type, quantity) => {
+  switch (type) {
+    case "Пиво":
+      return setBeer(quantity);
+    case "Вино":
+      return setWine(quantity);
+    case "Пепсі":
+      return setPepsi(quantity);
+    default:
+      return;
+  }
+};
 
 export const getCash = () => {
-  return `${cash} грн`;
+  return cash;
 };
+
 export const getBeer = () => {
-  return `${beer} шт.`;
+  return beer;
 };
+
 export const getWine = () => {
-  return `${wine} шт.`;
+  return wine;
 };
+
 export const getPepsi = () => {
-  return `${pepsi} шт.`;
+  return pepsi;
 };
 
 export const getBeerPrice = () => {
-  return 30;
+  return beerPrice;
 };
+
 export const getWinePrice = () => {
-  return 70;
+  return winePrice;
 };
+
 export const getPepsiPrice = () => {
-  return 50;
+  return pepsiPrice;
 };
 
 export const setCash = (value) => {
-  cash += value;
-  return;
+  return (cash += value);
 };
 
 export const setBeer = (value) => {
-  if (beer >= value) {
-    bool = true;
-    beer = beer - value;
-    return;
-  }
-
-  bool = false;
-  return;
+  return (beer -= value);
 };
 
 export const setWine = (value) => {
-  if (wine >= value) {
-    bool = true;
-    wine -= value;
-    return;
-  }
-  bool = false;
-  return;
+  return (wine -= value);
 };
 
 export const setPepsi = (value) => {
-  if (pepsi >= value) {
-    bool = true;
-    pepsi -= value;
-    return;
-  }
-  bool = false;
-  return;
+  return (pepsi -= value);
 };
