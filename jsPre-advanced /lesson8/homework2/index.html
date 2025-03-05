@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>List of prohibited words</header>
+    <div class="content">
+      <div class="wrapper">
+        <div class="words">
+          <div>Bad Words:</div>
+          <div class="badWords"></div>
+        </div>
+        <form name="addBadWord" class="addBadWord">
+          <input class="text" name="word" type="text" placeholder="word here..."/>
+          <div class="container">
+            <input name="Add" type="button" value="Add"/>
+            <input name="Reset" type="button" value="Reset"/>
+          </div>
+        </form>
+        <form name="correctSentence" class="correctSentence">
+          <textarea class="text" name="Field" placeholder="text here..."></textarea>
+          <input type="button" name="Cenzor" value="Cenzor"/>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
