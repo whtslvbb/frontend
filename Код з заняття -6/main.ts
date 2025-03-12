@@ -7,7 +7,6 @@
 // a = 0;
 // a = 'SSS';
 
-
 // String
 
 // let firstName: string; // string
@@ -16,7 +15,7 @@
 // lastName = 'Petriv';
 // lastName = 22;
 
-// let firstName: string = 'Ivan'; 
+// let firstName: string = 'Ivan';
 // let lastName: string = 'Ivanov';
 // let message: string = `Hello ${firstName} ${lastName}`;
 // console.log(message);
@@ -170,7 +169,6 @@
 
 // console.log(strToArr('Ivan'));
 
-
 // let strToArr = (name: string): Array<string> => name.split('');
 
 // function myError(message: string): never {
@@ -184,3 +182,43 @@
 // console.log(link.href);
 // console.log(link.textContent);
 
+enum UserType {
+  Admin = "123",
+  Manager = "manager",
+}
+
+// type UserType = "admin" | "manager";
+interface IManager {
+  name: string;
+  role: UserType.Manager;
+}
+
+interface IAdmin {
+  dupa: string;
+  role: UserType.Admin;
+}
+
+type IUser = IManager | IAdmin;
+
+const users: IUser[] = [
+  {
+    dupa: "name",
+    role: UserType.Admin,
+  },
+  {
+    name: "name",
+    role: UserType.Manager,
+  },
+];
+
+const allManagers = users.filter(({ role }) => role === UserType.Manager);
+
+const a = (user: IUser) => {
+  switch (user.role) {
+    case UserType.Admin:
+      user.dupa;
+      break;
+    default:
+      break;
+  }
+};

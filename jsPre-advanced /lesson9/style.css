@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  padding: 60px 0;
+  gap: 24px;
+}
+
+.enterData {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.part {
+  height: 100%;
+  width: 40%;
+}
+
+input,
+button {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 100;
+  border-radius: 4px;
+  outline: none;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  border: 1px solid lightgrey;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+  box-shadow: 0px 0px 2px 4px lightblue;
+}
+
+input[type="button"] {
+  border: 1px solid green;
+  max-width: 120px;
+  color: green;
+  background-color: white;
+  cursor: pointer;
+}
+
+input[type="button"]:hover {
+  color: white;
+  background-color: green;
+}
+
+input[type="button"]:focus {
+  box-shadow: 0px 0px 2px 4px lightgreen;
+}
+
+.keyLine {
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 20px;
+  border-bottom: 2px solid lightgray;
+}
+
+.box {
+  border-top: 1px solid lightgray;
+  padding: 12px 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr {
+  height: 40px;
+}
+
+td {
+  min-width: 20px;
+  padding: 12px;
+}
+
+.edit {
+  cursor: pointer;
+  border: none;
+  background-color: rgb(255, 176, 28);
+}
+
+.edit:hover {
+  background-color: rgb(207, 142, 22);
+}
+
+.edit:focus {
+  box-shadow: 0px 0px 1px 3px rgb(252, 201, 106);
+}
+
+.delete {
+  cursor: pointer;
+  border: none;
+  background-color: rgb(214, 31, 31);
+  color: white;
+}
+
+.delete:hover {
+  background-color: brown;
+}
+
+.buttonEdit {
+  display: none;
+}
